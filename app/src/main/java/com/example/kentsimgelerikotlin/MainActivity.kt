@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.kentsimgelerikotlin.databinding.ActivityDetailsBinding
 import com.example.kentsimgelerikotlin.databinding.ActivityMainBinding
 
+//var  globalLandmark : Landmark? = null
+
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var landmarks: ArrayList<Landmark>
