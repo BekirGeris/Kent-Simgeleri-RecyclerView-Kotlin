@@ -1,5 +1,7 @@
 package com.example.kentsimgelerikotlin
 
-class Landmark(var name: String, var country: String, var image: Int) {
+import java.io.Serializable
+
+class Landmark(var name: String, var country: String, var image: Int) : Serializable{
 
 }

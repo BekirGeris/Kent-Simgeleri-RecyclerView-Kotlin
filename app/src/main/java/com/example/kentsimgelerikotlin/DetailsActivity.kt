@@ -13,6 +13,10 @@ class DetailsActivity : AppCompatActivity() {
         binding = ActivityDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val selectedLandmark = intent.getSerializableExtra("landmark") as Landmark
+        binding.imageView.setImageResource(selectedLandmark.image)
+        binding.landmarkName.text = selectedLandmark.name
+        binding.landmarkCountry.text = selectedLandmark.country
 
     }
 }

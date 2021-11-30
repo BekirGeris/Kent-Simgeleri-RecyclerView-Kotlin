@@ -2,6 +2,7 @@ package com.example.kentsimgelerikotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.kentsimgelerikotlin.databinding.ActivityDetailsBinding
 import com.example.kentsimgelerikotlin.databinding.ActivityMainBinding
 
@@ -32,6 +33,10 @@ class MainActivity : AppCompatActivity() {
         landmarks.add(galata)
         landmarks.add(pisa)
         landmarks.add(pisa)
+
+        binding.recyclerView.layoutManager = LinearLayoutManager(this)
+        val adapter = LandmarkAdapter(landmarks)
+        binding.recyclerView.adapter = adapter
 
 
     }
